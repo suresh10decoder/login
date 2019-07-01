@@ -1,0 +1,88 @@
+<html>
+<head>
+        <tittle></tittle>
+        <script type="text/javascript">
+            function validate()
+            {
+             var name=document.LOGIN.UserName.value;
+             var email=document.LOGIN.Email.value;
+             var password=document.LOGIN.Password.value;
+             
+             if(name!= null && email!=null && password!= null)
+              {
+                window.open("https://www.google.com/?client=safari&channel=mac_bm")
+              }
+             else
+             {
+               alert("Error Password or Username")
+              }
+            }
+            </script>
+<style>
+    h1{
+        font-style:Times New Roman;
+        color:darkslategrey;
+        font-size: 30px;
+        text-align:center;
+
+    }
+    h2{
+        text-align: center;
+        font-size:30px;
+        color:rosybrown;
+    }
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50px;
+}
+ .input{
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+</style>
+</head>
+</br>
+<body bgcolor="skyblue">
+    <h2><center> USER LOGIN</center></h2>
+   
+<form name="LOGIN" onsubmit="validate()" >
+    <div>
+        <h1>
+<img  src="login.jpg" height="200" width="350" alt="login">
+        </h1>
+    </div>
+<div>
+    <h1>
+        <lable >UserName</lable></br>
+        <input class="input" type="text" name="UserName">
+    </h1>
+</div>
+<div>
+    <h1>
+        <lable>Email Id</lable></br>
+        <input class="input" type="text" name="Email">
+    </h1>
+</div>
+<div>
+    <h1>
+        <lable>Password</lable></br>
+        <input class="input" type="password" name="Password" >
+     </h1>
+</div>
+<div>
+    <h2>
+    <input   class="button" type="submit" value="login" > 
+    <input   class="button" type="reset" value="clear">     
+    </h2>
+</div>    
+</form>
+</body>
+</html>
